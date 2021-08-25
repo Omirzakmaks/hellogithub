@@ -10,8 +10,11 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Heloo world");
+             
+            Console.WriteLine('d');
+            Console.ReadKey(); 
+        
         }
-
+        
     }
 }
