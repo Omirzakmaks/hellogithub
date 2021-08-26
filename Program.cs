@@ -143,8 +143,15 @@ namespace ConsoleApp3
              }
         static  void esep17()
             {
-
-             }
+            int xA = 5;
+            int xB = 8;
+            int xC = 20;
+            int yA = 10;
+            int yB = 3;
+            int yC = 7;
+            int AC=
+            Console.WriteLine($"");
+            }
         static void Main(string[] args)
         {
             
