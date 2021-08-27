@@ -143,21 +143,40 @@ namespace ConsoleApp3
              }
         static  void esep17()
             {
-            int xA = 5;
-            int xB = 8;
-            int xC = 20;
-            int yA = 10;
-            int yB = 3;
-            int yC = 7;
-            double AC = Math.Sqrt(Math.Pow((xC-xA),2)+ Math.Pow((yC - yA), 2));
-            double BC= Math.Sqrt(Math.Pow((xC - xB), 2) + Math.Pow((yC - yB), 2));
-            double sum = AC + BC;
-            Console.WriteLine($"AC= {AC}   BC= {BC}  Sum={sum}");
+            int a = 8;
+            int b = 3;
+            int c = -10;
+            int ac = Math.Abs(c - a);
+            int bc = Math.Abs(c - b);
+            Console.WriteLine($"AC= {ac}\nBC= {bc}\nAC+BC={ac+bc}\n");
             }
+        static void esep18()
+            {
+            int a = 8;
+            int b = 3;
+            int c = -10;
+            int ac = Math.Abs(c - a);
+            int bc = Math.Abs(c - b);
+            Console.WriteLine($"AC= {ac}\nBC= {bc}\nAC*BC={ac*bc}\n");
+        }
+
+        static void esep19()
+        {
+            int xA = 1;
+            int yA = 1;
+            int xB = 3;
+            int yB = 4;
+            int AC = Math.Abs(xB - xA);
+            int BC = Math.Abs(yB - yA);
+            int P = (AC + BC) * 2;
+            int S = AC * BC;
+            Console.WriteLine( $"AC={AC} BC={BC}\n P={P} S={S}");
+
+        }
         static void Main(string[] args)
         {
             
-            esep17();
+            esep19();
 
             Console.ReadKey(); 
         
