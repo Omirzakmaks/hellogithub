@@ -149,13 +149,15 @@ namespace ConsoleApp3
             int yA = 10;
             int yB = 3;
             int yC = 7;
-            int AC=
-            Console.WriteLine($"");
+            double AC = Math.Sqrt(Math.Pow((xC-xA),2)+ Math.Pow((yC - yA), 2));
+            double BC= Math.Sqrt(Math.Pow((xC - xB), 2) + Math.Pow((yC - yB), 2));
+            double sum = AC + BC;
+            Console.WriteLine($"AC= {AC}   BC= {BC}  Sum={sum}");
             }
         static void Main(string[] args)
         {
             
-            esep1();
+            esep17();
 
             Console.ReadKey(); 
         
