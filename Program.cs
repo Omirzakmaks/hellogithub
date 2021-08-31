@@ -170,13 +170,76 @@ namespace ConsoleApp3
             int BC = Math.Abs(yB - yA);
             int P = (AC + BC) * 2;
             int S = AC * BC;
-            Console.WriteLine( $"AC={AC} BC={BC}\n P={P} S={S}");
+            Console.WriteLine($"AC={AC} BC={BC}\n P={P} S={S}");
+        }
 
+        static void esep20()
+            {
+            Console.Write("x1=");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.Write("y1=");
+            int y1 = int.Parse(Console.ReadLine());
+            Console.Write("x2=");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.Write("y2=");
+            int y2 = int.Parse(Console.ReadLine());
+            Console.WriteLine($"sqrt(x2-x1)^2+(y2-y1)^2)= {Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2))}");
+        }
+
+        static void esep21()
+        {
+            Console.Write("x1=");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.Write("y1=");
+            int y1 = int.Parse(Console.ReadLine());
+            Console.Write("x2=");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.Write("y2=");
+            int y2 = int.Parse(Console.ReadLine());
+            Console.Write("y3=");
+            int x3 = int.Parse(Console.ReadLine());
+            Console.Write("y3=");
+            int y3 = int.Parse(Console.ReadLine());
+            double a = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            double b = Math.Sqrt(Math.Pow((x3 - x2), 2) + Math.Pow((y3 - y2), 2));
+            double c = Math.Sqrt(Math.Pow((x3 - x1), 2) + Math.Pow((y3 - y1), 2));
+            double p = (a + b + c) / 2;
+            double S = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            Console.WriteLine($"S= {S}");
+        }
+
+        static void esep22()
+        {
+            Console.Write("a= ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b= ");
+            int b = int.Parse(Console.ReadLine());
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            Console.WriteLine($"a= {a} b= {b}");
+        }
+
+        static void esep23()
+        {
+            Console.Write("a= ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b= ");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("c= ");
+            int c = int.Parse(Console.ReadLine());
+            a = a+b+c;
+
+            b = a - b - c;//a
+            c = a - b - c;//b
+            a = a - b - c;//c
+            Console.WriteLine();
+            Console.WriteLine($"a= {c} b= {a} c= {b}");
         }
         static void Main(string[] args)
         {
             
-            esep19();
+            esep23();
 
             Console.ReadKey(); 
         
