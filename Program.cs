@@ -234,12 +234,77 @@ namespace ConsoleApp3
             c = a - b - c;//b
             a = a - b - c;//c
             Console.WriteLine();
-            Console.WriteLine($"a= {c} b= {a} c= {b}");
+            Console.WriteLine($"{a}, {b}, {c}");
+        }
+        static void esep24()
+        {
+            Console.Write("a= ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b= ");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("c= ");
+            int c = int.Parse(Console.ReadLine());
+            a = a ^ c;
+            c = a ^ c;//a
+            a = a ^ c;//c
+
+            b = b ^ c;
+            c = b ^ c;//b
+            b = b ^ c;//a
+            Console.WriteLine($"{a},{b},{c}");
+        }
+        static void esep25()
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"y= {3*Math.Pow(x,6)-6*x*x-7}");
+        }
+        static void esep26()
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"y= {4 * Math.Pow((x-3), 6) - 7 * Math.Pow((x-3), 3) +2}");
+        }
+        static void esep27()
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+            a = a * a;//a^2
+            Console.WriteLine($"a^2= {a}");
+            a = a * a;//a^4
+            Console.WriteLine($"a^4= {a}");
+            a = a * a; //a^8
+            Console.WriteLine($"a^8= {a}");
+        }
+        static void esep28()
+        {
+            Console.Write("a= ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = a * a;
+            Console.WriteLine($"a^2={b}");
+            a = a * b;
+            Console.WriteLine($"a^3= {a}");
+            a = a * b;
+            Console.WriteLine($"a^5= {a}");
+            b = a * a;
+            Console.WriteLine($"a^10= {b}");
+            a = a * b;
+            Console.WriteLine($"a^15= {a}");
+
+        }
+        static void esep29()
+        {
+            Console.Write("a= ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine((a * Math.PI) / 180);
+        }
+        static void esep30()
+        {
+            Console.Write("a= ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine((a * 180) / Math.PI);
         }
         static void Main(string[] args)
         {
             
-            esep23();
+            esep28();
 
             Console.ReadKey(); 
         
