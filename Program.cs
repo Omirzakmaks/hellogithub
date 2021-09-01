@@ -301,6 +301,19 @@ namespace ConsoleApp3
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine((a * 180) / Math.PI);
         }
+
+        static void esep31()
+        {
+            Console.Write("tF= ");
+            int tF = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"tC= {(tF-32)*5/9}");
+        }
+        static void esep32()
+        {
+            Console.Write("tC= ");
+            int tC = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"tF= {tC*9/5+32}");
+        }
         static void Main(string[] args)
         {
             
