@@ -314,10 +314,46 @@ namespace ConsoleApp3
             int tC = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"tF= {tC*9/5+32}");
         }
+        static void esep33()
+        {
+            Console.Write("x= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("a= ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"1 kg konfet y= {a/x}");
+        }
+        static void esep34()
+        {
+            Console.Write("x= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("a= ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("y= ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b= ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int wokolad = a / x;
+            int iris = b / y;
+            Console.WriteLine($"1 kg wokolad = {wokolad} rub\n1 kg iris = {iris}rub\n {wokolad/iris}-raza doroje wokolad ");
+        }
+        static void esep35()
+        {
+            Console.Write($"V1= ");
+            int v1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("v2= ");
+            int v2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("t1= ");
+            int t1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("t2= ");
+            int t2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"S = {(v1 + v2) * t1+ (v1 - v2) * t2} km\n");
+        }
         static void Main(string[] args)
         {
             
-            esep28();
+            esep35();
 
             Console.ReadKey(); 
         
