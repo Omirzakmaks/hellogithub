@@ -350,10 +350,59 @@ namespace ConsoleApp3
             int t2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"S = {(v1 + v2) * t1+ (v1 - v2) * t2} km\n");
         }
+
+        static void esep36()
+        {
+            Console.Write($"V1= ");
+            int v1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("v2= ");
+            int v2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("t= ");
+            int t = Convert.ToInt32(Console.ReadLine());
+            Console.Write("s= ");
+            int s = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"S = {v1  * t + v2* t+s} km\n");
+        }
+
+        static void esep37()
+        {
+            Console.Write($"V1= ");
+            int v1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("v2= ");
+            int v2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("t= ");
+            int t = Convert.ToInt32(Console.ReadLine());
+            Console.Write("s= ");
+            int s = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"S = {s-(v1 + v2) * t } km\n");
+        }
+        static void esep38()
+        {
+            Console.Write($"Ax+B=0; A!=0;\nA= ");
+            int A = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B= ");
+            int B = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"x = {-B/A}\n");
+        }
+
+        static void esep39()
+        {
+            Console.Write($"Ax^2+Bx+C=0; A!=0;\nA= ");
+            int A = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B= ");
+            int B = Convert.ToInt32(Console.ReadLine());
+            Console.Write("C= ");
+            int C = Convert.ToInt32(Console.ReadLine());
+
+            int D = B * B - 4 * A * C;
+            int x1 = (-B - Convert.ToInt32(Math.Sqrt(D)) / (2 * A));
+            int x2= (-B + Convert.ToInt32(Math.Sqrt(D)) / (2 * A));
+            Console.WriteLine($"x1 = {x1}\nx2={x2}");
+        }
         static void Main(string[] args)
         {
             
-            esep35();
+            esep39();
 
             Console.ReadKey(); 
         
